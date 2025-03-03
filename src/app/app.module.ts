@@ -5,8 +5,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './views/login/login.component';
-import { PersonalInformationComponent } from './views/personal-information/personal-information.component';
 import { ListEventComponent } from './views/list-event/list-event.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,9 +23,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     ListEventComponent,
-    PersonalInformationComponent,
     EditEventComponent
   ],
   imports: [

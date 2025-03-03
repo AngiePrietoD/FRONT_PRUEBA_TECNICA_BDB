@@ -5,6 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 import { EventModel, EventFormModel } from 'src/app/models/event.model';
 import { EventService } from 'src/app/services/event.service';
 
+
 @Component({
   selector: 'app-edit-event',
   templateUrl: './edit-event.component.html',
