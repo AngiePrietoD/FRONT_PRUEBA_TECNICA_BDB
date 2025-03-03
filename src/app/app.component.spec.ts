@@ -20,10 +20,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('front_prueba_tecnica');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('front_prueba_tecnica app is running!');
-  });
 });

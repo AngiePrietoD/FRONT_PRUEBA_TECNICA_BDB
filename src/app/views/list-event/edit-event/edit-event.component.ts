@@ -20,6 +20,16 @@ export class EditEventComponent {
   ) { }
 
   event: EventModel[] = [];
+  title: string = "";
+
+  ngOnInit() {
+    if (this.data) {
+      this.title= "Editar Evento"
+    }
+    else{
+      this.title= "Agregar Evento"
+    }
+  }
   
   eventForm = new FormGroup<EventFormModel>({
     title: new FormControl({ value: this.data?.title|| '', disabled: false }, Validators.required),

@@ -19,7 +19,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +30,15 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+      closeButton: true,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      enableHtml: true
+    }),
     BrowserAnimationsModule,
     MatIconModule,
     MatTableModule,

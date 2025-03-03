@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { EditEventComponent } from './edit-event/edit-event.component';
-import { EventModel, EventRequest } from 'src/app/models/event.model';
+import { EventRequest } from 'src/app/models/event.model';
 import { EventService } from 'src/app/services/event.service';
 import { ToastrService } from 'ngx-toastr';
 
@@ -32,7 +32,7 @@ export class ListEventComponent {
   }
 
   showSuccess(message:string) {
-    this.toastr.success(message);
+    this.toastr.success(message, 'Éxito');
   }
 
   applyFilter(event: Event) {
@@ -67,7 +67,7 @@ export class ListEventComponent {
     });
   }
 
-  deleteEvent(id:any){
+  deleteEvent(id: number): void{
     this.eventService.deleteEvent(id).subscribe({
       next: (data) => {
         if (data) {

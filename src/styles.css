@@ -1,3 +1,25 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toast {
+    background-color: #007bff; /* Fondo de toast */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+  }
+  
+  .toast-success {
+    background-color: #28a745; /* Fondo verde para éxito */
+  }
+  
+  .toast-error {
+    background-color: #dc3545; /* Fondo rojo para error */
+  }
+  
+  .toast-info {
+    background-color: #17a2b8; /* Fondo azul claro para info */
+  }
+  
+  .toast-warning {
+    background-color: #ffc107; /* Fondo amarillo para advertencia */
+  }
