@@ -1,0 +1,58 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body class="align">
+    <div class="card" data-state="#about">
+        <div class="card-header">
+            <h1 class="card-fullname">Información Basica </h1>
+            <h2 class="card-jobtitle">Prueba tecnica</h2>
+        </div>
+        <div class="card-main">
+            <div class="card-section is-active" id="about">
+                <div class="card-content">
+                    <form [formGroup]="LoginForm" >
+                        <div class="form-group">
+                            <label for="">Primer nombre</label>
+                            <input class="form-control" formControlName="firstName" name="firstName">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Segundo nombre</label>
+                                    <input class="form-control" formControlName="secondName" name="secondName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Segundo apellido</label>
+                                    <input class="form-control" formControlName="secondSurname" name="secondSurname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Telefono</label>
+                                    <input class="form-control" formControlName="phone" name="phone" type="number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Primer apellido</label>
+                                    <input class="form-control" formControlName="surname" name="surname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Dirección</label>
+                                    <input class="form-control" formControlName="address" name="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ciudad de residencia</label>
+                                    <input class="form-control" formControlName="residence" name="residence">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="text-align: center">
+                            <button class="btnSubmit"> <a href="#">Regresar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

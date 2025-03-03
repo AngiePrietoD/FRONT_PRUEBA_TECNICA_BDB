@@ -1,0 +1,36 @@
+<div mat-dialog-title class="card-header">
+  <h1 class="card-fullname">Editar evento </h1>
+  <button mat-icon-button color="warn" class="close-button">
+    <mat-icon fontIcon="close" fill="none" (click)="close(false)"></mat-icon>
+</button>
+
+</div>
+<mat-dialog-content>
+  <body class="align">
+    <div class="card" data-state="#about">
+      <div class="form-container">
+        <form [formGroup]="eventForm" (ngSubmit)="submitForm()">
+          <div class="form-group">
+            <label for="">Titulo del evento</label>
+            <input class="form-control" formControlName="title" name="firstName">
+          </div>
+          <div class="form-group">
+            <label for="">Fecha y hora</label>
+            <input class="form-control" formControlName="date" name="secondName">
+          </div>
+          <div class="form-group">
+            <label for="">Descripción</label>
+            <input class="form-control" formControlName="description" name="secondSurname">
+          </div>
+          <div class="form-group">
+            <label for="">Ubicación</label>
+            <input class="form-control" formControlName="location" name="phone">
+          </div>
+          <div class="form-group" style="text-align: center">
+            <button class="btnSubmit" type="submit" [disabled]="!eventForm.valid"> <a>Guardar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</mat-dialog-content>

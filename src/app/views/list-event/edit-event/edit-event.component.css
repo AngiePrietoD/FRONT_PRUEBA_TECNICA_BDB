@@ -1,0 +1,161 @@
+
+.align {
+    display: grid;
+  }
+
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #fff;
+    background-color:#0043a9;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnSubmit a{
+    color:#fff;
+    text-decoration:none;
+    padding:5px 5px 5px 0;
+  }
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+ body {
+	 color: #2b2c48;
+	 font-family: "Jost", sans-serif;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 background-attachment: fixed;
+	 display: flex;
+	 flex-wrap: wrap;
+	 padding: 20px;
+}
+ .card {
+	 max-width: 550px;
+     width: 100%;
+	 margin: auto;
+	 overflow-y: auto;
+	 position: relative;
+	 z-index: 1;
+	 overflow-x: hidden;
+	 display: flex;
+	 transition: 0.3s;
+	 flex-direction: column;
+	 border-radius: 10px;
+	 box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+     border-color: #0043a9;
+     border-width :5px;
+
+ }
+ 
+ .card.is-active .card-fullname {
+	 bottom: 18px;
+	 font-size: 19px;
+   color:#fff;
+}
+
+ .card-header {
+	 position: relative;
+	 display: flex;
+	 height: 60px;
+	 flex-shrink: 0;
+	 width: 100%;
+	 transition: 0.3s;
+     background:#0043a9; 
+     place-items: center;
+}
+
+ .card-fullname {
+	 position: absolute;
+	 bottom: 0;
+	 font-size: 22px;
+	 font-weight: 700;
+	 text-align: center;
+	 white-space: nowrap;
+	 transform: translateY(-10px) translateX(-50%);
+	 left: 50%;
+     color:#fff;
+     top: 40%;
+}
+
+ .card-content {
+	 padding: 20px;
+}
+
+.form-container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #003DA5; /* Azul */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btnSubmit:disabled{
+    font-weight: 600;
+    width: 50%;
+    color: #c5c2c0;
+    background-color: #a8a6a6;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+
+.button:hover {
+        background-color: #002776; /* Azul más oscuro */
+}
+
+.close-button {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    -webkit-text-stroke: 2px white;
+    border: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,37 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body class="align">
+  <div class="card" data-state="#about">
+    <div class="card-header">
+      <img class="card-avatar"
+        src="https://www.sophossolutions.com/wp-content/uploads/2022/06/cropped-web_logo_Sophos_Blanco.png" />
+      <h1 class="card-fullname">Prueba Tecnica </h1>
+      <h2 class="card-jobtitle">Angie Prieto</h2>
+    </div>
+    <div class="card-main">
+      <div class="card-section is-active" id="about">
+        <div class="card-content">
+          <form [formGroup]="LoginForm" (ngSubmit)="submitForm()">
+            <div class="form-group">
+              <select class="form-control" formControlName="typeDocument" name="typeDocument">
+                <option value="" disabled selected>Tipo de documento</option>
+                <option *ngFor="let type of typeDocument" [value]="type.Code">{{ type.name }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" formControlName="document" name="document" type="number"
+                placeholder="Numero de documento">
+            </div>
+
+            <div class="form-group" style="text-align: center">
+              <input type="submit" class="btnSubmit" [disabled]="!LoginForm.valid" value="Buscar" />
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

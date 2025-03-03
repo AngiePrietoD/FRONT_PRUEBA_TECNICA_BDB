@@ -1,0 +1,60 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 30px;
+
+	.header {
+		margin-top: 20px;
+		min-height: 64px;
+		padding: 8px 24px 0;
+
+		.add-button {
+			display: flex;
+			position: absolute;
+			right: 60px;
+			top: 10%;
+			transform: translateY(-50%);
+			border-radius: 10px;
+			background: #0043a9;
+			border: none;
+			color: white !important;
+			font-weight: bold;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+
+		}
+
+		.filter-container mat-form-field {
+			width: 80%;
+		}
+	}
+}
+
+
+
+.mat-form-field {
+	font-size: 14px;
+	width: 100%;
+}
+
+
+
+.mat-icon-button {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding: 0 !important;
+
+	.button-edit {
+		color: transparent;
+		-webkit-text-stroke: 1px #0043a9;
+	}
+
+	.button-delete {
+		color: transparent;
+		-webkit-text-stroke: 1px red;
+	}
+}
